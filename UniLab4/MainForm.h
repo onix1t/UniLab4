@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include "IDataStructure.h"
 
@@ -104,7 +104,7 @@ namespace UniLab4 {
                this->insertButton->Name = L"insertButton";
                this->insertButton->Size = System::Drawing::Size(72, 23);
                this->insertButton->TabIndex = 2;
-               this->insertButton->Text = L"Ввод";
+               this->insertButton->Text = L"Р’РІРѕРґ";
                this->insertButton->TextAlign = System::Drawing::ContentAlignment::TopCenter;
                this->insertButton->UseVisualStyleBackColor = true;
                this->insertButton->Click += gcnew System::EventHandler(this, &MainForm::insertButton_Click);
@@ -116,7 +116,7 @@ namespace UniLab4 {
                this->removeButton->Name = L"removeButton";
                this->removeButton->Size = System::Drawing::Size(72, 23);
                this->removeButton->TabIndex = 3;
-               this->removeButton->Text = L"Убрать";
+               this->removeButton->Text = L"РЈР±СЂР°С‚СЊ";
                this->removeButton->TextAlign = System::Drawing::ContentAlignment::TopCenter;
                this->removeButton->UseVisualStyleBackColor = true;
                this->removeButton->Click += gcnew System::EventHandler(this, &MainForm::removeButton_Click);
@@ -142,7 +142,7 @@ namespace UniLab4 {
                this->replaceButton->Name = L"replaceButton";
                this->replaceButton->Size = System::Drawing::Size(84, 23);
                this->replaceButton->TabIndex = 6;
-               this->replaceButton->Text = L"Заменить";
+               this->replaceButton->Text = L"Р—Р°РјРµРЅРёС‚СЊ";
                this->replaceButton->UseVisualStyleBackColor = true;
                this->replaceButton->Click += gcnew System::EventHandler(this, &MainForm::replaceButton_Click);
                // 
@@ -160,7 +160,7 @@ namespace UniLab4 {
                this->rotateButton->Name = L"rotateButton";
                this->rotateButton->Size = System::Drawing::Size(213, 23);
                this->rotateButton->TabIndex = 8;
-               this->rotateButton->Text = L"Повернуть";
+               this->rotateButton->Text = L"РџРѕРІРµСЂРЅСѓС‚СЊ";
                this->rotateButton->UseVisualStyleBackColor = true;
                this->rotateButton->Click += gcnew System::EventHandler(this, &MainForm::rotateButton_Click);
                // 
@@ -171,7 +171,7 @@ namespace UniLab4 {
                this->medianButton->Name = L"medianButton";
                this->medianButton->Size = System::Drawing::Size(213, 23);
                this->medianButton->TabIndex = 9;
-               this->medianButton->Text = L"Медиана";
+               this->medianButton->Text = L"РњРµРґРёР°РЅР°";
                this->medianButton->UseVisualStyleBackColor = true;
                this->medianButton->Click += gcnew System::EventHandler(this, &MainForm::medianButton_Click);
                // 
@@ -195,7 +195,7 @@ namespace UniLab4 {
                this->label1->Name = L"label1";
                this->label1->Size = System::Drawing::Size(254, 18);
                this->label1->TabIndex = 11;
-               this->label1->Text = L"Работа со структурами данных";
+               this->label1->Text = L"Р Р°Р±РѕС‚Р° СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂР°РјРё РґР°РЅРЅС‹С…";
                // 
                // label3
                // 
@@ -217,7 +217,7 @@ namespace UniLab4 {
                this->groupBox1->Size = System::Drawing::Size(228, 75);
                this->groupBox1->TabIndex = 14;
                this->groupBox1->TabStop = false;
-               this->groupBox1->Text = L"Настройка структуры и элементов";
+               this->groupBox1->Text = L"РќР°СЃС‚СЂРѕР№РєР° СЃС‚СЂСѓРєС‚СѓСЂС‹ Рё СЌР»РµРјРµРЅС‚РѕРІ";
                // 
                // groupBox2
                // 
@@ -230,7 +230,7 @@ namespace UniLab4 {
                this->groupBox2->Size = System::Drawing::Size(226, 76);
                this->groupBox2->TabIndex = 15;
                this->groupBox2->TabStop = false;
-               this->groupBox2->Text = L"Замена элементов";
+               this->groupBox2->Text = L"Р—Р°РјРµРЅР° СЌР»РµРјРµРЅС‚РѕРІ";
                // 
                // groupBox3
                // 
@@ -242,7 +242,7 @@ namespace UniLab4 {
                this->groupBox3->Size = System::Drawing::Size(226, 100);
                this->groupBox3->TabIndex = 16;
                this->groupBox3->TabStop = false;
-               this->groupBox3->Text = L"Дополнительные функции";
+               this->groupBox3->Text = L"Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ С„СѓРЅРєС†РёРё";
                // 
                // groupBox4
                // 
@@ -252,7 +252,7 @@ namespace UniLab4 {
                this->groupBox4->Size = System::Drawing::Size(267, 263);
                this->groupBox4->TabIndex = 17;
                this->groupBox4->TabStop = false;
-               this->groupBox4->Text = L"Элементы структуры";
+               this->groupBox4->Text = L"Р­Р»РµРјРµРЅС‚С‹ СЃС‚СЂСѓРєС‚СѓСЂС‹";
                // 
                // MainForm
                // 
@@ -266,7 +266,7 @@ namespace UniLab4 {
                this->Controls->Add(this->groupBox1);
                this->Controls->Add(this->label1);
                this->Name = L"MainForm";
-               this->Text = L"Лабораторная работа №4 - Работа со структурами данных";
+               this->Text = L"Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–4 - Р Р°Р±РѕС‚Р° СЃРѕ СЃС‚СЂСѓРєС‚СѓСЂР°РјРё РґР°РЅРЅС‹С…";
                this->groupBox1->ResumeLayout(false);
                this->groupBox1->PerformLayout();
                this->groupBox2->ResumeLayout(false);
@@ -283,7 +283,7 @@ namespace UniLab4 {
 
     private: System::Void structureComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
         String^ selectedStructure = structureComboBox->SelectedItem->ToString();
-        delete dataStructure; // Освобождение предыдущего объекта
+        delete dataStructure; // РћСЃРІРѕР±РѕР¶РґРµРЅРёРµ РїСЂРµРґС‹РґСѓС‰РµРіРѕ РѕР±СЉРµРєС‚Р°
         if (selectedStructure == "Array") {
             dataStructure = new MyArray();
         }
@@ -326,7 +326,7 @@ namespace UniLab4 {
     private: System::Void medianButton_Click(System::Object^ sender, System::EventArgs^ e) {
         try {
             double median = dataStructure->FindMedian();
-            MessageBox::Show("Медиана: " + median.ToString());
+            MessageBox::Show("РњРµРґРёР°РЅР°: " + median.ToString());
         }
         catch (std::exception& e) {
             MessageBox::Show(gcnew String(e.what()));

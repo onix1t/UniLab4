@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <vector>
 #include <stack>
@@ -46,7 +46,7 @@ namespace UniLab4 {
         }
 
         double FindMedian() override {
-            if (data.empty()) throw std::runtime_error("Структура данных пуста.");
+            if (data.empty()) throw std::runtime_error("РЎС‚СЂСѓРєС‚СѓСЂР° РґР°РЅРЅС‹С… РїСѓСЃС‚Р°.");
             std::vector<int> sortedData = data;
             std::sort(sortedData.begin(), sortedData.end());
             size_t n = sortedData.size();
@@ -89,7 +89,7 @@ namespace UniLab4 {
         }
 
         double FindMedian() override {
-            if (data.empty()) throw std::runtime_error("Структура данных пуста.");
+            if (data.empty()) throw std::runtime_error("РЎС‚СЂСѓРєС‚СѓСЂР° РґР°РЅРЅС‹С… РїСѓСЃС‚Р°.");
             std::vector<int> sortedData = data;
             std::sort(sortedData.begin(), sortedData.end());
             size_t n = sortedData.size();
@@ -120,15 +120,15 @@ namespace UniLab4 {
         }
 
         void Replace(int index, int newValue) override {
-            throw std::runtime_error("Замена элемента не поддерживается для cтруктуры типа Stack.");
+            throw std::runtime_error("Р—Р°РјРµРЅР° СЌР»РµРјРµРЅС‚Р° РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Stack.");
         }
 
         void Rotate(int count) override {
-            throw std::runtime_error("Поворот не поддерживается для cтруктуры типа Stack.");
+            throw std::runtime_error("РџРѕРІРѕСЂРѕС‚ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Stack.");
         }
 
         double FindMedian() override {
-            throw std::runtime_error("Нахождение медианы не поддерживается для cтруктуры типа Stack.");
+            throw std::runtime_error("РќР°С…РѕР¶РґРµРЅРёРµ РјРµРґРёР°РЅС‹ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Stack.");
         }
 
         std::vector<int> GetValues() override {
@@ -151,19 +151,19 @@ namespace UniLab4 {
         }
 
         void RemoveLast() override {
-            throw std::runtime_error("Удаление последнего элемента не поддерживается для cтруктуры типа Queue.");
+            throw std::runtime_error("РЈРґР°Р»РµРЅРёРµ РїРѕСЃР»РµРґРЅРµРіРѕ СЌР»РµРјРµРЅС‚Р° РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Queue.");
         }
 
         void Replace(int index, int newValue) override {
-            throw std::runtime_error("Замена элемента не поддерживается для cтруктуры типа Queue.");
+            throw std::runtime_error("Р—Р°РјРµРЅР° СЌР»РµРјРµРЅС‚Р° РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Queue.");
         }
 
         void Rotate(int count) override {
-            throw std::runtime_error("Поворот не поддерживается для cтруктуры типа Queue.");
+            throw std::runtime_error("РџРѕРІРѕСЂРѕС‚ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Queue.");
         }
 
         double FindMedian() override {
-            throw std::runtime_error("Нахождение медианы не поддерживается для cтруктуры типа Queue.");
+            throw std::runtime_error("РќР°С…РѕР¶РґРµРЅРёРµ РјРµРґРёР°РЅС‹ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ РґР»СЏ cС‚СЂСѓРєС‚СѓСЂС‹ С‚РёРїР° Queue.");
         }
 
         std::vector<int> GetValues() override {
