@@ -43,7 +43,6 @@ namespace UniLab4 {
     private: System::Windows::Forms::Button^ medianButton;
     private: System::Windows::Forms::TextBox^ outputTextBox;
     private: System::Windows::Forms::Label^ label1;
-
     private: System::Windows::Forms::Label^ label3;
     private: System::Windows::Forms::GroupBox^ groupBox1;
     private: System::Windows::Forms::GroupBox^ groupBox2;
@@ -281,9 +280,24 @@ namespace UniLab4 {
            }
 #pragma endregion
 
+    // -- [ Функции ] --
+
+    // Функция обновления данных
+    private: void UpdateOutput() {
+        std::vector<int> values = dataStructure->GetValues();
+        inputTextBox->Clear();
+        outputTextBox->Clear();
+        for (int i = 0; i < values.size(); ++i) {
+            outputTextBox->AppendText(" " + i + ":" + values[i] + ";" + "\n");
+        }
+    }
+
+    // -- [ Кнопки ] --
+        
+    // Кнопка меню выбора структуры
     private: System::Void structureComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
         String^ selectedStructure = structureComboBox->SelectedItem->ToString();
-        delete dataStructure; // Освобождение предыдущего объекта
+        delete dataStructure;
         if (selectedStructure == "Array") {
             dataStructure = new MyArray();
         }
@@ -299,17 +313,20 @@ namespace UniLab4 {
         UpdateOutput();
     }
 
+    // Кнопка добавления элемента
     private: System::Void insertButton_Click(System::Object^ sender, System::EventArgs^ e) {
         int value = Int32::Parse(inputTextBox->Text);
         dataStructure->Insert(value);
         UpdateOutput();
     }
 
+    // Кнопка удаления элемента 
     private: System::Void removeButton_Click(System::Object^ sender, System::EventArgs^ e) {
         dataStructure->RemoveLast();
         UpdateOutput();
     }
 
+    // Кнопка замены элемента 
     private: System::Void replaceButton_Click(System::Object^ sender, System::EventArgs^ e) {
         int index = Int32::Parse(indexTextBox->Text);
         int newValue = Int32::Parse(replaceTextBox->Text);
@@ -317,12 +334,14 @@ namespace UniLab4 {
         UpdateOutput();
     }
 
+    // Кнопка поворота элемента 
     private: System::Void rotateButton_Click(System::Object^ sender, System::EventArgs^ e) {
         int count = Int32::Parse(rotateTextBox->Text);
         dataStructure->Rotate(count);
         UpdateOutput();
     }
-
+        
+    // Кнопка нахождения медианы структуры
     private: System::Void medianButton_Click(System::Object^ sender, System::EventArgs^ e) {
         try {
             double median = dataStructure->FindMedian();
@@ -330,15 +349,6 @@ namespace UniLab4 {
         }
         catch (std::exception& e) {
             MessageBox::Show(gcnew String(e.what()));
-        }
-    }
-
-    private: void UpdateOutput() {
-        std::vector<int> values = dataStructure->GetValues();
-        inputTextBox->Clear();
-        outputTextBox->Clear();
-        for (int i = 0; i < values.size(); ++i) {
-            outputTextBox->AppendText(" " + i + ":" + values[i] + ";" + "\n");
         }
     }
     };
