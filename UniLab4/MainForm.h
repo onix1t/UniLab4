@@ -295,7 +295,7 @@ namespace UniLab4 {
     // -- [ Кнопки ] --
         
     // Кнопка меню выбора структуры
-        private: System::Void structureComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+    private: System::Void structureComboBox_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
         String^ selectedStructure = structureComboBox->SelectedItem->ToString();
         delete dataStructure;
         if (selectedStructure == "Array") {
